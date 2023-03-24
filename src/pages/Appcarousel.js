@@ -3,7 +3,7 @@ import './Appcarousel.css';
 function App() {
   const [data, setData] = useState([]);
   const carousel = useRef(null);
-
+  
   useEffect(() => {
     fetch('http://localhost:3000/static/shoes.json')
       .then((response) => response.json())
