@@ -5,7 +5,7 @@ function App() {
   const carousel = useRef(null);
   
   useEffect(() => {
-    fetch('http://localhost:3000/static/shoes.json')
+    fetch("https://carouselvercel-gzjo.vercel.app/")
       .then((response) => response.json())
       .then(setData);
   }, []);
